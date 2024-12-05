@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма Регистрации</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+        
+        form {
+            width: 320px;
+            padding: 15px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+        
+        button {
+            background-color: #1cbc11;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #14a20a;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="/register" method="post">
+        <input type="text" id="username" name="username" placeholder="Ваше имя" required>
+        <input type="text" id="email" name="email" placeholder="Ваш e-mail" required>
+        <input type="text" id="phone" name="phone" placeholder="Ваш телефон" required>
+        <input type="password" id="password" name="password" placeholder="Пароль" required>
+        <input type="password" id="password" name="password" placeholder="Пароль еще раз" required>
+        <button type="submit">Регистрация</button>
+    </form>
+
+</body>
+</html>
